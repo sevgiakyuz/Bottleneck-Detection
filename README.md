@@ -1,0 +1,2 @@
+# Bottleneck-Detection
+Yapay Zeka
