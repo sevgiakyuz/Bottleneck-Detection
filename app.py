@@ -7,7 +7,7 @@ import torch.nn as nn
 from transformers import AutoTokenizer, AutoModel
 
 # ==========================================
-# 1. MODEL MİMARİSİ (PART 2'DEN AYNEN ALINDI)
+# 1. MODEL MİMARİSİ 
 # ==========================================
 # Modeli yükleyebilmek için sınıf yapısı şarttır
 class BottleneckAnalyzerModel(nn.Module):
@@ -78,7 +78,7 @@ def load_trained_model():
 model, tokenizer, device, model_status = load_trained_model()
 
 # ==========================================
-# 3. ARAYÜZ AYARLARI (SENİN TASARIMIN)
+# 3. ARAYÜZ AYARLARI 
 # ==========================================
 st.set_page_config(
     page_title="Darboğaz Analiz Sistemi",
@@ -119,7 +119,7 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# --- DATA (DASHBOARD İÇİN SABİT VERİ) ---
+# --- DATA (ÖRNEK DASHBOARD İÇİN) ---
 departments = [
     {"id": 1, "name": "Finans", "risk": 45, "bottleneck": True, "f1": 0.82},
     {"id": 2, "name": "Üretim", "risk": 78, "bottleneck": True, "f1": 0.79},
